@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #252525;
+}
+
+a {
+  text-decoration: none;
+  color: #252525;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  height: 100vh;
+}
+
+.login-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container form{
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  text-transform: uppercase;
+  margin: 35px auto;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,.29);
+  cursor: pointer;
+  background: #fff;
+  font-size: 16px;
+  width: 250px;
+  position: relative;
+}
+
+.btn:hover {
+  border-color: rgba(0,0,0,.5);
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: 0;
+  font-weight: 700;
+  border-width: 2px;
+}
+
+
+select{
+  margin: 10px;
+  font-size: x-large;
+  width: 250px;
+  height: 40px;
+}
+
+.opt-btn {
+  margin: 15px 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  font-size: 16px;
+  width: auto;
+  position: relative;
+  font-weight: bolder;
+  background: none;
+  color: white;
+}
+
+.choosen-btn, .choosen-btn:hover {
+  color: rgb(11, 187, 20);
+  outline: 1px solid rgb(11, 187, 20);
+}
+
+
+.unchoosen-btn, .unchoosen-btn:hover {
+  color: rgb(187, 11, 11);
+  outline: 1px solid rgb(187, 11, 11);
+}
+
+.plain-btn:hover{
+  outline: 1px solid rgb(10, 138, 223);
+  color:rgb(10, 138, 223);
+}
+
+.center {
+  text-align: center;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav ul {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between ;
+  text-decoration: none;
+}
+
+.nav li:first-child {
+  padding-left: 0;
+}
+
+.nav-left{
+  display: flex;
+  align-items: center;
+}
+
+.nav-right{
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.avatar {
+  height: 50px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.no-qs{
+  height:400px;
+  line-height: 400px;
+  vertical-align: middle;
+  font-size: xx-large;
+}
+
+.tabs{
+  width: 100%;
+  max-width: 590px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#03745d;
+}
+
+.tabs h3{
+  cursor: pointer;
+  margin: 0;
+  height: 100%;
+  width: 50%;
+  padding: 10px 20px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.inactive-tab{
+  background-color: rgb(90, 88, 88);
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.tabs-container{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 590px;
+}
+
+.questions-list{
+  padding-left: 0;
+  background-color: #03745d;
+  margin: 0;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.question {
+  color: white;
+  width: 100%;
+  max-width: 590px;
+  display: flex;
+  margin: auto;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+  cursor: pointer;
+  background:rgb(1, 32, 36) ;
+}
+
+.question-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background:rgb(10, 42, 43);
+}
+
+.question-options {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.optionOne{
+  display: flex;
+  flex-direction: column;
+}
+
+.optionTwo{
+  display: flex;
+  flex-direction: column;
+}
+
+.new-question {
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  border-radius: 4px;
+  border: 1px solid #dad7d7;
+  padding: 10px;
+  font-size: 15px;
+  height: 40px;
+}
+
+.question-length {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #C3392A;
+}
+
+table{
+  width: 100%;
+}
+
+table caption{
+  padding: 12px 15px;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #03745d; 
+}
+
+table thead tr {
+  background-color: black;
+  color: #ffffff;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid black;
+}
+
+table tbody tr.active-row {
+  font-weight: bold;
+  color: white;
+  background-color: #03745d;
+}
